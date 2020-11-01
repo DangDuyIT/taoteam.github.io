@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Itim|Lobster|Montserrat:500|Noto+Serif|Nunito|Patrick+Hand|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i|Roboto+Slab|Saira');
+
 *{
     margin: 0;
     padding: 0;
@@ -78,11 +80,11 @@
 
 .mail:hover .cover:before{
     transform: rotateX(180deg);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .mail:hover .letter{
-    top: -500px;
+    top: -550px;
     left:0px;
     transition: all 1s ease;
     
