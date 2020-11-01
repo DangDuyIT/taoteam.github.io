@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="./index.css">
+	<style>
+		body {
+
+			margin: 0px;
+			justify-content: center;
+			align-items: center;
+			top: 5000px;
+			background-image: url(img/background1.png);
+		}
+
+		.box {
+			width:540px;
+			height: 360px;
+			top: 150px;
+			left: 680px;
+			position: absolute;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+			box-shadow: 5px 5px 5px 5px white;
+
+			transform: perspective(400px) rotateX(deg)rotateY(0deg);
+		}
+
+		.d1 {
+			width: 540px;
+			height: 360px;
+			background-color: white;
+
+			transform-style: preserve-3d;
+			/* transform: perspective(400px) rotateX(20deg) rotateY(10deg);   */
+
+			color: black;
+		}
+
+		.d1::before
+
+		/*, . d1::after */
+			{
+			content: '';
+			background-color: #ECE3D4;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-image: url(img/rose2.png);
+			background-repeat: no-repeat;
+			background-position: top left;
+			background-size: 200px 200px;
+			box-sizing: border-box;
+		}
+
+		.d1::before {
+			
+			content: 'Táo Team - 20/11 Chúc mừng ngày 20-11';
+			font-size: 26px;
+			color: white;
+			left: 0;
+			top: 0;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			transition: 2s;
+			transform-origin: left;
+
+		}
+
+		/* .d1::after{
+			content: "123";
+			color: white;
+			right: 0;
+			top: 0;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			transition: 2s;
+			transform-origin: right;
+		} */
+
+		.d1:hover::before {
+			transform: rotateY(-180deg);
+		}
+
+		/* .d1:hover::after{
+			transform:rotateY(180deg);
+        }
+       */
+
+		.bottom {
+			width: 25em;
+			height: 3em;
+			background: #e2e2e2;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform-origin: 100% 100%;
+			transform: rotateX(90deg);
+		}
+	</style>
+</head>
+
+<body class='me'>
+	<!-- <iframe src="background.html" frameborder="0" width="100%" height="100%" style="position:absolute; z-index: -3; " scroll="no"></iframe> -->
+
+	<div class='box'>
+		<span class="iconify" data-icon="mdi-leaf" data-inline="false"></span>
+		<div class='d1'>hihi</div>
+		<div class="bottom"></div>
+		<div class="shadow"></div>
+	</div>
+
+
+</body>
+
+</html>
